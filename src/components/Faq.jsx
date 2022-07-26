@@ -3,7 +3,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { BackgroundContainer, ContentFaq, TitleHistory, FaqAccordeon } from './components';
 import teste5 from '../assets/5.jpg';
-import { Perguntas } from './QuestionFaq';
+import { Perguntas } from './config/QuestionFaq';
 
 export default function Faq({ faq }) {
 
@@ -27,7 +27,7 @@ export default function Faq({ faq }) {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <p>{pergunta1.p}</p>
+            <p style={{fontSize: '24px'}}>{pergunta1.p}</p>
           </AccordionSummary>
           <AccordionDetails>
             <p>{pergunta1.r}</p>

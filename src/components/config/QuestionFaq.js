@@ -23,7 +23,7 @@ export const Perguntas = [
         r: 'Presale is over.'
     },
 
-    {p: 'If I move my aliens to a cold wallet will I lose my holders role?',
+    {p: "If I move my aliens to a cold wallet will I lose my holder's role?",
         r: 'Yes, you will need to verify again with your new wallet that holds your aliens.'
     }
 ]

@@ -4,33 +4,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Button } from '@mui/material';
 import { CardTimeCeo, TitleTime, TimeText, CardTime, ContentTime, FlexContentCenter, BackgroundContainer } from './components';
-import lucassilva from '../assets/lucassilva.webp';
-import mirela from '../assets/mirela.webp';
-import borja from '../assets/borja.webp';
-import thales from '../assets/Thales.webp';
-import marcus from '../assets/marco.webp';
-import djonga from '../assets/djonga.webp';
-import gabriel from '../assets/felipe.webp';
-import arthur from '../assets/arthur.webp';
-import clarisse from '../assets/clarisse.webp';
+import {ObjCeo, ObjTime1, ObjTime2} from './config/TimeData';
 import test4 from '../assets/4.jpg'
 
-
 export default function Time({ time }) {
-  const ObjCeo = { nome: 'Lucas Silva', funcao: 'Co-Founder & CEO Chief Executive Officer', nft: lucassilva }
-  const ObjTime1 = [
-    { nome: 'Mirela Pedrosa', funcao: 'Co-Founder & CCO chief compliance officer', nft: mirela }
-    , { nome: 'Arthur Chequer', funcao: 'Co-Founder & COO chief operating officer', nft: arthur }
-    , { nome: 'Thales Pacheco', funcao: 'Co-Founder C CCO chief creative officer', nft: thales }
-    , { nome: 'Lucas Borja', funcao: 'Dev Team', nft: borja }
-
-  ]
-  const ObjTime2 = [
-    { nome: 'Clarisse Rodrigues', funcao: 'Dev Team', nft: clarisse }
-    , { nome: 'Gabriel Felipe', funcao: 'Dev Team', nft: gabriel }
-    , { nome: 'Marcos Felix', funcao: 'Dev Team', nft: marcus }
-    , { nome: 'João Victor', funcao: 'Dev Team', nft: djonga }
-  ]
 
   const styles = {
     borda: { borderBottom: '1px solid white' },
@@ -60,8 +37,8 @@ export default function Time({ time }) {
             </TimeText>
           </CardContent>
           <FlexContentCenter>
-            <Button><InstagramIcon sx={styles.icon} /></Button>
-            <Button><TwitterIcon sx={styles.icon} /></Button>
+            <Button><a target="_blank" rel="noreferrer" href={ObjCeo.insta}><InstagramIcon sx={styles.icon} /></a></Button>
+            <Button><a target="_blank" rel="noreferrer" href={ObjCeo.twitter}><TwitterIcon sx={styles.icon} /></a></Button>
           </FlexContentCenter>
         </CardTimeCeo>
       </FlexContentCenter>
@@ -84,8 +61,8 @@ export default function Time({ time }) {
               </TimeText>
             </CardContent>
             <FlexContentCenter>
-              <Button><InstagramIcon sx={styles.icon} /></Button>
-              <Button><TwitterIcon sx={styles.icon} /></Button>
+              <Button><a target="_blank" rel="noreferrer" href={team.insta}><InstagramIcon sx={styles.icon} /></a></Button>
+              <Button><a target="_blank" rel="noreferrer" href={team.twitter}><TwitterIcon sx={styles.icon} /></a></Button>
             </FlexContentCenter>
           </CardTime>
 
@@ -110,8 +87,8 @@ export default function Time({ time }) {
               </TimeText>
             </CardContent>
             <FlexContentCenter>
-              <Button><InstagramIcon sx={styles.icon} /></Button>
-              <Button><TwitterIcon sx={styles.icon} /></Button>
+              <Button><a target="_blank" rel="noreferrer" href={team2.insta}><InstagramIcon sx={styles.icon} /></a></Button>
+              <Button><a target="_blank" rel="noreferrer" href={team2.twitter}><TwitterIcon sx={styles.icon} /></a></Button>
             </FlexContentCenter>
           </CardTime>
         ))}
