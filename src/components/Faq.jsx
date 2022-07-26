@@ -2,7 +2,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { BackgroundContainer, ContentFaq, TitleHistory, FaqAccordeon } from './components';
-import teste5 from '../assets/5.jpg';
+import teste5 from '../assets/5.webp';
 import { Perguntas } from './config/QuestionFaq';
 
 export default function Faq({ faq }) {

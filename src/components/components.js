@@ -42,7 +42,8 @@ export const BackgroundSection = styled.div`
 `;
 
 export const AlienHistory = styled(motion.img)`
-    width: 50%; 
+    width: 50%;
+    height: auto;
 `;
 
 export const TitleHistory = styled.p`
@@ -125,7 +126,7 @@ export const ContainerPrincipal = styled.div`
     margin-left: -17%;
 `;
 
-export const ListMenu = styled.li`
+export const ListMenu = styled(motion.li)`
     margin-right: 9%;
 `;
 
@@ -146,6 +147,11 @@ export const ListContainer = styled.ul`
 export const FlexContentCenter = styled.div`
     display: flex;
     justify-content: center;
+`;
+
+export const ContainerFooter = styled.div`
+ height: 170px;
+background: linear-gradient(90deg, rgba(179,164,202,1) 47%, rgba(172,187,219,1) 80%);
 `;
 
 

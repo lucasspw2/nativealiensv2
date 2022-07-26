@@ -2,7 +2,7 @@ import {useState, useRef} from 'react';
 import Alien4 from '../assets/alien4.webp';
 import Alien1 from '../assets/alien1.webp';
 import {BackgroundSection, AlienHistory, TitleHistory, HistoryContent} from './components';
-import Background1 from '../assets/1.jpg'
+import Background1 from '../assets/1.webp';
 
 export default function About({about}) {
     const scrollRef = useRef(null);
@@ -25,10 +25,10 @@ export default function About({about}) {
               onViewportEnter={false}
              onMouseOut={AlterarImage} src={image} />
             <div>
-                <TitleHistory>Historia</TitleHistory>
-                <HistoryContent>Estando há cerca de 2000 mil anos-luz da Terra, os aliens nasceram no planeta Kepler-145, onde aconteceu uma guerra, que levou muitos a evacuação imediata.
-                    No ano de 3530 a.C., os aliens descobriram um planeta na Via-Láctea, nomeado pelos antigos gregos, ‘’Gaia’’, entidade titânica que representava os terráqueos.
-                    A fim de não serem descobertos pelos seres humanos e com receio de instaurarem uma nova guerra neste novo habitat, eles formaram a Sociedade Secreta Alienígena (SSA), onde os demais de sua raça poderiam se reunir, contanto que eles tenham um único objetivo em comum: salvar à terra.
+                <TitleHistory>History</TitleHistory>
+                <HistoryContent>Being about 2000 thousand light years from Earth, the aliens were born on the planet Kepler-145, where a war took place, which led many to immediate evacuation.
+                      In the year 3530 BC, the aliens discovered a planet in the Milky Way, named by the ancient Greeks,
+                      “Gaia”, a titanic entity that represented the earthlings.  In order not to be discovered by humans and fearful of initiating a new war in this new habitat, they formed the Alien Secret Society (SSA), where the rest of their race could gather, as long as they have a single common goal:save the earth.
                 </HistoryContent>
             </div>
         </BackgroundSection>

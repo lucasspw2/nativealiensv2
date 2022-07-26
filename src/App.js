@@ -7,6 +7,7 @@ const About = lazy(() => import('./components/About'));
 const Nave = lazy(() => import('./components/Nave'));
 const Time = lazy(() => import('./components/Time'));
 const Faq = lazy(() => import('./components/Faq'));
+const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -31,6 +32,7 @@ function App() {
         <Nave nativeNave={nativeNave} />
         <Time time={time} />
         <Faq faq={faq} />
+        <Footer scrollToBottom={scrollToBottom} about={about} nativeNave={nativeNave} time={time} faq={faq} />
       </Suspense>
     </>
   );

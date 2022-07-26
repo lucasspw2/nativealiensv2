@@ -4,8 +4,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Button } from '@mui/material';
 import { CardTimeCeo, TitleTime, TimeText, CardTime, ContentTime, FlexContentCenter, BackgroundContainer } from './components';
-import {ObjCeo, ObjTime1, ObjTime2} from './config/TimeData';
-import test4 from '../assets/4.jpg'
+import { ObjCeo, ObjTime1, ObjTime2 } from './config/TimeData';
+import test4 from '../assets/4.webp';
 
 export default function Time({ time }) {
 
@@ -61,11 +61,19 @@ export default function Time({ time }) {
               </TimeText>
             </CardContent>
             <FlexContentCenter>
-              <Button><a target="_blank" rel="noreferrer" href={team.insta}><InstagramIcon sx={styles.icon} /></a></Button>
-              <Button><a target="_blank" rel="noreferrer" href={team.twitter}><TwitterIcon sx={styles.icon} /></a></Button>
+              {team.insta && (
+                <Button>
+                  <a target="_blank" rel="noreferrer" href={team.insta}><InstagramIcon sx={styles.icon} /></a>
+                </Button>
+              )}
+              {team.twitter &&(
+                <Button>
+                  <a target="_blank" rel="noreferrer" href={team.twitter}><TwitterIcon sx={styles.icon} /></a>
+                </Button>
+              )}
+              
             </FlexContentCenter>
           </CardTime>
-
         ))}
       </ContentTime>
       <ContentTime>
@@ -87,8 +95,16 @@ export default function Time({ time }) {
               </TimeText>
             </CardContent>
             <FlexContentCenter>
-              <Button><a target="_blank" rel="noreferrer" href={team2.insta}><InstagramIcon sx={styles.icon} /></a></Button>
-              <Button><a target="_blank" rel="noreferrer" href={team2.twitter}><TwitterIcon sx={styles.icon} /></a></Button>
+              {team2.insta && (
+                <Button>
+                  <a target="_blank" rel="noreferrer" href={team2.insta}><InstagramIcon sx={styles.icon} /></a>
+                </Button>
+              )}
+              {team2.twitter && (
+                <Button>
+                  <a target="_blank" rel="noreferrer" href={team2.twitter}><TwitterIcon sx={styles.icon} /></a>
+                </Button>
+              )}
             </FlexContentCenter>
           </CardTime>
         ))}

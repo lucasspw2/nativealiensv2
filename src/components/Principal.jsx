@@ -1,40 +1,20 @@
 import {
-  DFlex, NavContent, DescriptionOpensea,
-  BackgroundContainer, LogoNative, ContainerPrincipal,
-  ListMenu, ContainerSocial, ListContainer
+  DFlex, DescriptionOpensea,
+  BackgroundContainer, ContainerPrincipal
 } from './components';
-import NativeLogo from '../assets/nativelogo.png';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { Button } from '@mui/material';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import Alien1 from '../assets/alien1.webp';
 import Alien2 from '../assets/alien2.webp';
 import Alien3 from '../assets/alien3.webp';
 import Planeta1 from '../assets/borja_01.webp';
 import { motion } from "framer-motion";
 import ButtonOpensea from './Button/ButtonOpensea';
+import Navbar from './Navbar';
 
-export default function Principal({ scrollToBottom, about, nativeNave, time, faq }) {
-  
-  const styles = {
-    social: { fontSize: 40, color: 'white' }
-  }
+export default function Principal({ scrollToBottom, about, nativeNave, time, faq }) {  
   
   return (
     <BackgroundContainer imgUrl={Planeta1}>
-      <DFlex>
-        <LogoNative src={NativeLogo} alt="Native Aliens" />
-          <ListContainer>
-            <ListMenu><NavContent onClick={e => scrollToBottom(about)} >ABOUT</NavContent></ListMenu>
-            <ListMenu><NavContent onClick={e => scrollToBottom(nativeNave)}>NAVE </NavContent></ListMenu>
-            <ListMenu><NavContent onClick={e => scrollToBottom(time)}>TEAM</NavContent></ListMenu>
-            <ListMenu><NavContent onClick={e => scrollToBottom(faq)}>FAQ</NavContent></ListMenu>
-          </ListContainer>
-          <ContainerSocial>
-            <li><Button><a target="_blank" rel="noreferrer" href='https://www.instagram.com/nativealiensofficial/?r=nametag'><InstagramIcon sx={styles.social} /></a></Button></li>
-            <li><Button><a target="_blank" rel="noreferrer" href='https://twitter.com/AliensNative'><TwitterIcon sx={styles.social} /></a></Button></li>
-          </ContainerSocial>
-      </DFlex>
+      <Navbar scrollToBottom={scrollToBottom} about={about} nativeNave={nativeNave} time={time} faq={faq} />
       <DFlex>
         <div style={{ width: '73%', marginLeft: '-3%' }}>
           <motion.img
