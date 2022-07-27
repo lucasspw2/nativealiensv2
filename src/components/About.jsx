@@ -1,6 +1,6 @@
 import {useState, useRef} from 'react';
 import Alien4 from '../assets/alien4.webp';
-import Alien1 from '../assets/alien1.webp';
+import Alien1 from '../assets/alien3.webp';
 import {BackgroundSection, AlienHistory, TitleHistory, HistoryContent} from './components';
 import Background1 from '../assets/1.webp';
 

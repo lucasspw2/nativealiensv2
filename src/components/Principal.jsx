@@ -24,7 +24,7 @@ export default function Principal({ scrollToBottom, about, nativeNave, time, faq
               x: { duration: 2 },
               default: { ease: "linear" }
             }}
-            src={Alien2} style={{ width: '50%', marginRight: '-10%', marginBottom: '-0.4%' }}
+            src={Alien1} style={{ width: '50%', marginRight: '-10%', marginBottom: '-0.4%' }}
           />
 
           <motion.img
@@ -34,7 +34,7 @@ export default function Principal({ scrollToBottom, about, nativeNave, time, faq
               x: { duration: 1.3 },
               default: { ease: "linear" }
             }}
-            src={Alien3} style={{ width: '30%', marginRight: '-5%', marginBottom: '-0.4%' }} />
+            src={Alien2} style={{ width: '30%', marginRight: '-5%', marginBottom: '-0.4%' }} />
 
           <motion.img
             initial={{ x: -950, y: 0 }}
@@ -43,7 +43,7 @@ export default function Principal({ scrollToBottom, about, nativeNave, time, faq
               x: { duration: 1 },
               default: { ease: "linear" }
             }}
-            src={Alien1} style={{ width: '20%', marginLeft: '-2.7%', marginBottom: '-0.4%' }} />
+            src={Alien3} style={{ width: '20%', marginLeft: '-2.7%', marginBottom: '-0.4%' }} />
         </div>
         <ContainerPrincipal>
           <DescriptionOpensea>NATIVE ALIENS NFT COLLECTION</DescriptionOpensea>

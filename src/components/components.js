@@ -150,7 +150,7 @@ export const FlexContentCenter = styled.div`
 `;
 
 export const ContainerFooter = styled.div`
- height: 170px;
+padding: 2%;
 background: linear-gradient(90deg, rgba(179,164,202,1) 47%, rgba(172,187,219,1) 80%);
 `;
 
