@@ -13,7 +13,7 @@ export const ObjCeo = { nome: 'Lucas Silva', funcao: 'Co-Founder & CEO Chief Exe
 export const ObjTime1 = [
   { nome: 'Mirela Pedrosa', funcao: 'Co-Founder & CCO chief compliance officer', nft: mirela, insta: 'https://www.instagram.com/mirela_pedrosa_lima/', twitter: 'https://twitter.com/MirelaPedrosa' }
   , { nome: 'Arthur Chequer', funcao: 'Co-Founder & COO chief operating officer', nft: arthur, insta: 'https://www.instagram.com/arthurchequer/', twitter: 'https://twitter.com/chequerarthur' }
-  , { nome: 'Thales Pacheco', funcao: 'Co-Founder C CCO chief creative officer', nft: thales, insta: 'https://www.instagram.com/suuuuare/', twitter: 'https://twitter.com/Taresusama' }
+  , { nome: 'Thales Pacheco', funcao: 'Co-Founder & CCO chief creative officer', nft: thales, insta: 'https://www.instagram.com/suuuuare/', twitter: 'https://twitter.com/Taresusama' }
   , { nome: 'Lucas Borja', funcao: 'Dev Team', nft: borja, insta: 'https://www.instagram.com/lborja93/', twitter: 'https://twitter.com/505borja' }
 ]
 
