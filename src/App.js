@@ -16,6 +16,7 @@ function App() {
   const time = useRef(null);
   const faq = useRef(null);
 
+
   const scrollToBottom = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,

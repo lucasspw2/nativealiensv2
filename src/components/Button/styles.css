@@ -21,7 +21,7 @@
   justify-content: center;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 13.5px );
-  
+
 }
 
 .shapes {
@@ -129,14 +129,6 @@
   display: block;
 }
 
-html {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
-
-* {
-  box-sizing: inherit;
-}
 
 *:before,
 *:after {

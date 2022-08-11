@@ -1,6 +1,6 @@
 import {
   DFlex, DescriptionOpensea,
-  BackgroundContainer, ContainerPrincipal
+  BackgroundContainer, ContainerPrincipal, AlienPrincipal
 } from './components';
 import Alien1 from '../assets/alien1.webp';
 import Alien2 from '../assets/alien2.webp';
@@ -10,13 +10,13 @@ import { motion } from "framer-motion";
 import ButtonOpensea from './Button/ButtonOpensea';
 import Navbar from './Navbar';
 
-export default function Principal({ scrollToBottom, about, nativeNave, time, faq }) {  
-  
+export default function Principal({ scrollToBottom, about, nativeNave, time, faq }) {
+
   return (
     <BackgroundContainer imgUrl={Planeta1}>
       <Navbar scrollToBottom={scrollToBottom} about={about} nativeNave={nativeNave} time={time} faq={faq} />
       <DFlex>
-        <div style={{ width: '73%', marginLeft: '-3%' }}>
+        <AlienPrincipal>
           <motion.img
             initial={{ x: -850, y: 0 }}
             animate={{ x: 0, y: 0 }}
@@ -44,7 +44,7 @@ export default function Principal({ scrollToBottom, about, nativeNave, time, faq
               default: { ease: "linear" }
             }}
             src={Alien3} style={{ width: '20%', marginLeft: '-2.7%', marginBottom: '-0.4%' }} />
-        </div>
+        </AlienPrincipal>
         <ContainerPrincipal>
           <DescriptionOpensea>NATIVE ALIENS NFT COLLECTION</DescriptionOpensea>
           <ButtonOpensea>

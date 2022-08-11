@@ -8,26 +8,26 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { Button } from '@mui/material';
 import { motion } from "framer-motion";
 
-export default function Navbar({ scrollToBottom, about, nativeNave, time, faq, style }) {
+export default function Navbar({ scrollToBottom, about, nativeNave, time, faq }) {
 
     const styles = {
         social: { fontSize: 40, color: 'white' }
     }
     return (
         <DFlex>
-            <LogoNative src={NativeLogo} alt="Native Aliens" style={style} />
+            <LogoNative src={NativeLogo} alt="Native Aliens"/>
             <ListContainer>
                 <ListMenu
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <NavContent onClick={e => scrollToBottom(about)} >ABOUT</NavContent>
+                    <NavContent onClick={e => scrollToBottom(about)}>ABOUT</NavContent>
                 </ListMenu>
                 <ListMenu
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                 >
-                    <NavContent onClick={e => scrollToBottom(nativeNave)}>NAVE </NavContent>
+                    <NavContent onClick={e => scrollToBottom(nativeNave)}>NAVE</NavContent>
                 </ListMenu>
                 <ListMenu
                     whileHover={{ scale: 1.1 }}

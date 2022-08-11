@@ -13,7 +13,7 @@ export default function Time({ time }) {
     borda: { borderBottom: '1px solid white' },
     fontBold: { fontWeight: 'bold', fontFamily: 'Audiowide' },
     icon: { fontSize: 40, color: 'white' },
-    bgTransparent: { background: 'transparent' }
+    bgTransparent: { background: 'transparent', width: '300px', marginBottom: '1%' }
   }
 
   return (
@@ -44,69 +44,73 @@ export default function Time({ time }) {
       </FlexContentCenter>
       <ContentTime>
         {ObjTime1.map((team) => (
-          <CardTime sx={styles.bgTransparent} key={team.nome}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="250"
-              image={team.nft}
-              sx={styles.borda}
-            />
-            <CardContent>
-              <TimeText gutterBottom variant="h6" component="div" sx={styles.fontBold}>
-                {team.nome}
-              </TimeText>
-              <TimeText variant="body2" sx={styles.fontBold}>
-                {team.funcao}
-              </TimeText>
-            </CardContent>
-            <FlexContentCenter>
-              {team.insta && (
-                <Button>
-                  <a target="_blank" rel="noreferrer" href={team.insta}><InstagramIcon sx={styles.icon} /></a>
-                </Button>
-              )}
-              {team.twitter &&(
-                <Button>
-                  <a target="_blank" rel="noreferrer" href={team.twitter}><TwitterIcon sx={styles.icon} /></a>
-                </Button>
-              )}
-              
-            </FlexContentCenter>
-          </CardTime>
+          <FlexContentCenter>
+            <CardTime sx={styles.bgTransparent} key={team.nome}>
+              <CardMedia
+                component="img"
+                alt="green iguana"
+                height="250"
+                image={team.nft}
+                sx={styles.borda}
+              />
+              <CardContent>
+                <TimeText gutterBottom variant="h6" component="div" sx={styles.fontBold}>
+                  {team.nome}
+                </TimeText>
+                <TimeText variant="body2" sx={styles.fontBold}>
+                  {team.funcao}
+                </TimeText>
+              </CardContent>
+              <FlexContentCenter>
+                {team.insta && (
+                  <Button>
+                    <a target="_blank" rel="noreferrer" href={team.insta}><InstagramIcon sx={styles.icon} /></a>
+                  </Button>
+                )}
+                {team.twitter && (
+                  <Button>
+                    <a target="_blank" rel="noreferrer" href={team.twitter}><TwitterIcon sx={styles.icon} /></a>
+                  </Button>
+                )}
+
+              </FlexContentCenter>
+            </CardTime>
+          </FlexContentCenter>
         ))}
       </ContentTime>
       <ContentTime>
         {ObjTime2.map((team2) => (
-          <CardTime sx={styles.bgTransparent} key={team2.nome}>
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              height="250"
-              image={team2.nft}
-              sx={styles.borda}
-            />
-            <CardContent>
-              <TimeText gutterBottom variant="h6" component="div" sx={styles.fontBold}>
-                {team2.nome}
-              </TimeText>
-              <TimeText variant="body2" sx={styles.fontBold}>
-                {team2.funcao}
-              </TimeText>
-            </CardContent>
-            <FlexContentCenter>
-              {team2.insta && (
-                <Button>
-                  <a target="_blank" rel="noreferrer" href={team2.insta}><InstagramIcon sx={styles.icon} /></a>
-                </Button>
-              )}
-              {team2.twitter && (
-                <Button>
-                  <a target="_blank" rel="noreferrer" href={team2.twitter}><TwitterIcon sx={styles.icon} /></a>
-                </Button>
-              )}
-            </FlexContentCenter>
-          </CardTime>
+          <FlexContentCenter>
+            <CardTime sx={styles.bgTransparent} key={team2.nome}>
+              <CardMedia
+                component="img"
+                alt="green iguana"
+                height="250"
+                image={team2.nft}
+                sx={styles.borda}
+              />
+              <CardContent>
+                <TimeText gutterBottom variant="h6" component="div" sx={styles.fontBold}>
+                  {team2.nome}
+                </TimeText>
+                <TimeText variant="body2" sx={styles.fontBold}>
+                  {team2.funcao}
+                </TimeText>
+              </CardContent>
+              <FlexContentCenter>
+                {team2.insta && (
+                  <Button>
+                    <a target="_blank" rel="noreferrer" href={team2.insta}><InstagramIcon sx={styles.icon} /></a>
+                  </Button>
+                )}
+                {team2.twitter && (
+                  <Button>
+                    <a target="_blank" rel="noreferrer" href={team2.twitter}><TwitterIcon sx={styles.icon} /></a>
+                  </Button>
+                )}
+              </FlexContentCenter>
+            </CardTime>
+          </FlexContentCenter>
         ))}
       </ContentTime>
     </BackgroundContainer>

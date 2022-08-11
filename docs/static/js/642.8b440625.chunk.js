@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunknativev2=self.webpackChunknativev2||[]).push([[642],{642:function(t,e,a){a.r(e),a.d(e,{default:function(){return r}});var n=a(9281),o=a(4108),i=a(184);function r(t){var e=t.scrollToBottom,a=t.about,r=t.nativeNave,u=t.time,v=t.faq;return(0,i.jsx)(o.v3,{children:(0,i.jsx)(n.Z,{scrollToBottom:e,about:a,nativeNave:r,time:u,faq:v,style:{marginLeft:"5%"}})})}}}]);
-//# sourceMappingURL=642.8b440625.chunk.js.map
