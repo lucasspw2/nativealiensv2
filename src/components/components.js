@@ -39,6 +39,7 @@ export const NavContent = styled.button`
   padding: 10px;
   background: white;
   box-shadow: -6px 18px 8px -6px rgba(55, 55, 155, 1); 
+  
   @media(max-width: 800px) {
     padding: 5px;
   } 
