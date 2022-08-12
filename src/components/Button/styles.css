@@ -63,7 +63,7 @@
   bottom: -100px;
   left: -100px;
   right: -100px;
-  width: calc(100% + 200px);
+  width: calc(100% + 100px);
   pointer-events: none;
 }
 

@@ -44,8 +44,8 @@ export default function Time({ time }) {
       </FlexContentCenter>
       <ContentTime>
         {ObjTime1.map((team) => (
-          <FlexContentCenter>
-            <CardTime sx={styles.bgTransparent} key={team.nome}>
+          <FlexContentCenter key={team.nome}>
+            <CardTime sx={styles.bgTransparent} >
               <CardMedia
                 component="img"
                 alt="green iguana"
@@ -80,8 +80,8 @@ export default function Time({ time }) {
       </ContentTime>
       <ContentTime>
         {ObjTime2.map((team2) => (
-          <FlexContentCenter>
-            <CardTime sx={styles.bgTransparent} key={team2.nome}>
+          <FlexContentCenter key={team2.nome}>
+            <CardTime sx={styles.bgTransparent} >
               <CardMedia
                 component="img"
                 alt="green iguana"
