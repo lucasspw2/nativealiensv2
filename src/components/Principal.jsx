@@ -2,6 +2,7 @@ import {
   DFlex, DescriptionOpensea,
   BackgroundContainer, ContainerPrincipal, AlienPrincipal
 } from './components';
+
 import Alien1 from '../assets/alien1.webp';
 import Alien2 from '../assets/alien2.webp';
 import Alien3 from '../assets/alien3.webp';
@@ -9,6 +10,7 @@ import Planeta1 from '../assets/borja_01.webp';
 import { motion } from "framer-motion";
 import ButtonOpensea from './Button/ButtonOpensea';
 import Navbar from './Navbar';
+
 
 export default function Principal({ scrollToBottom, about, nativeNave, time, faq }) {
 

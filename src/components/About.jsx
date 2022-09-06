@@ -3,6 +3,7 @@ import Alien4 from '../assets/alien4.webp';
 import Alien1 from '../assets/alien3.webp';
 import { BackgroundSection, AlienHistory, TitleHistory, HistoryContent } from './components';
 import Background1 from '../assets/1.webp';
+import Carousel from './Carousel';
 
 export default function About({ about }) {
     const scrollRef = useRef(null);
@@ -17,6 +18,8 @@ export default function About({ about }) {
         }
     }
     return (
+        <>
+        
         <BackgroundSection ref={about} imgUrl={Background1} >
             <AlienHistory
                 alt="Alien"
@@ -33,6 +36,7 @@ export default function About({ about }) {
                 </HistoryContent>
             </div>
         </BackgroundSection>
+        </>
 
     )
 }

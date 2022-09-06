@@ -52,6 +52,10 @@ export const BackgroundSection = styled.div`
   background: url(${(props)=> props.imgUrl}); 
   background-size: cover;
 
+  @media(max-width: 1400px) {
+    flex-direction: column;
+  }
+
   @media(max-width: 800px) {
     flex-direction: column;
   }
@@ -128,6 +132,10 @@ export const ContentTime = styled.div`
   justify-content: space-between;
   margin: 5% 5%;
 
+  @media(max-width: 1400px) {
+    flex-direction: column;
+  }
+
   @media(max-width: 800px) {
     flex-direction: column;
   }
@@ -166,7 +174,7 @@ export const ContainerSocial = styled.ul`
   margin-right: 3%;
 
   @media(max-width: 800px) {
-    margin-left: 29%;
+    margin-left: 30%;
   }
 `;
 
@@ -196,9 +204,82 @@ export const AlienPrincipal = styled.div`
   margin-left: -3%;
 
   @media(max-width: 800px) {
-    margin-left: 10%;
+    margin-left: 9%;
     width: 90%;
   }
 `;
 
+export const ContainerCarousel = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px 5px #f4f4f4;
+  
+  @media(max-width: 1400px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    margin-left: 2%;
+  }
+
+  @media(max-width: 800px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-left: 2%;
+  }
+
+`;
+
+export const CarouselCard = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+
+`;
+
+export const CarouselDetail = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+
+`;
+
+export const CarouselContentButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+`;
+
+export const CarouselButton = styled.button`
+  width: 95%;
+  background: linear-gradient(90deg, rgba(186,222,228,1) 0%, rgba(135,94,223,1) 100%, rgba(169,179,226,1) 100%);
+  padding: 5%;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white; 
+  box-shadow: 3px 3px 3px 3px #f4f4f4;
+`;
+
+export const TitleCard = styled.p`
+  font-size: 18px;
+  background: -webkit-linear-gradient(purple, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  @media(max-width: 1280px) {
+    font-size: 16px;
+    background: -webkit-linear-gradient(purple, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`;
 
