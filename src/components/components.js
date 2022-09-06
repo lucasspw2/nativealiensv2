@@ -213,7 +213,6 @@ export const ContainerCarousel = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 5px 5px 5px 5px #f4f4f4;
   
   @media(max-width: 1400px) {
     display: flex;
@@ -240,6 +239,7 @@ export const CarouselCard = styled.div`
   align-items: center;
   justify-content: center;
   border: 1px solid black;
+  border-radius: 20px 20px 0 0;
 
 `;
 
