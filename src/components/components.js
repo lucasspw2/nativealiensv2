@@ -238,8 +238,9 @@ export const CarouselCard = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 20px 20px 0 0;
+  box-shadow: 1px 10px 20px #f4f4f4;
 
 `;
 
@@ -247,7 +248,8 @@ export const CarouselDetail = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px 2px #f4f4f4;
 
 `;
 
@@ -266,20 +268,18 @@ export const CarouselButton = styled.button`
   border-radius: 20px;
   border: 2px solid white;
   color: white; 
-  box-shadow: 3px 3px 3px 3px #f4f4f4;
+  box-shadow: 1px 1px 1px 1px #f4f4f4;
+ 
 `;
 
 export const TitleCard = styled.p`
   font-size: 18px;
-  background: -webkit-linear-gradient(purple, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
   
   @media(max-width: 1280px) {
     font-size: 16px;
-    background: -webkit-linear-gradient(purple, blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
+    
   }
 `;
 

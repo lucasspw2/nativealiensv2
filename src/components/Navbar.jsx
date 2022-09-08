@@ -2,7 +2,7 @@ import {
     DFlex, NavContent, LogoNative,
     ListMenu, ContainerSocial, ListContainer
 } from './components';
-import NativeLogo from '../assets/nativelogo.png';
+import NativeLogo from '../assets/newlogo.png';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Button } from '@mui/material';
